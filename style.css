@@ -1,6 +1,6 @@
 header {
-  background-color: black;
-  color: white;
+  background-color:blanchedalmond;
+  color:darkslategray;
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -10,7 +10,7 @@ header {
   height: 100%;
   width: 20%;
   align-items: center;
-  background-color: #000;
+  background-color:hotpink;
 }
 .navme {
   height: 100%;
@@ -36,5 +36,5 @@ header {
 }
 
 .navme nav a:hover {
-  color: #38bdf8;
+  color:lightcoral;
 }
