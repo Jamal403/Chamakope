@@ -12,6 +12,25 @@ header {
   align-items: center;
   background-color:hotpink;
 }
+
+/* new one */
+
+nav a {
+  display: inline-block;      /
+  background-color: #333;     
+  color: white;               
+  padding: 10px 20px;         
+  margin: 5px;                
+  border-radius: 5px;         
+  text-decoration: none;      
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: aqua;     /
+  color: black;               
+}
+
 .navme {
   height: 100%;
   width: 80%;
