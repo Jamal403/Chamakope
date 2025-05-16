@@ -1,0 +1,40 @@
+header {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+}
+
+.logo {
+  height: 100%;
+  width: 20%;
+  align-items: center;
+  background-color: #000;
+}
+.navme {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.navme nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.navme nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navme nav a:hover {
+  color: #38bdf8;
+}
