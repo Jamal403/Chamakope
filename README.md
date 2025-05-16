@@ -1,4 +1,4 @@
-README Hints for Your Portfolio Website Project
+
 1. Project Title
 A simple, clear title, e.g.
 Chamakope's Portfolio Website
