@@ -10,7 +10,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color:aquamarine;
+      background-color: aquamarine;
     }
 
     header {
@@ -18,6 +18,18 @@
       color: white;
       padding: 20px 40px;
       text-align: center;
+    }
+
+    .navme nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .navme nav a:hover {
+      color: aqua;
     }
 
     .hero {
@@ -36,6 +48,113 @@
       font-size: 1.2em;
     }
 
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      display: inline-block;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      margin-top: 30px;
+    }
+
+    .card-info span {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4e54c8;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #2c2fb3;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 80px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .modal-content button {
+      background-color: #4e54c8;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background-color: #2c2fb3;
+    }
+
+    .dev-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #4e54c8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dev-btn:hover {
+      background-color: #2c2fb3;
+    }
+
     footer {
       background-color: black;
       color: white;
@@ -45,43 +164,187 @@
       width: 100%;
       bottom: 0;
     }
+
+    .mini-contact {
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      background-color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-size: 0.9em;
+      color: #333;
+    }
   </style>
 </head>
 <body>
 
- <header>
-
+  <header>
     <div class="logo">
-      <h1>Winga Visheti</h1>
+      <h1>Winga Ramsey</h1>
     </div>
-
     <div class="navme">
       <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contactform.html">Contact</a>
-        <a href="survey.html">Survey</a>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a id="openGallery">Portfolio</a>
+        <a id="openContact">Contact</a>
+        <a href="#">Survey</a>
       </nav>
     </div>
   </header>
+
   <section class="hero">
     <h1>Hello, I'm Chamakope</h1>
     <p>A passionate web developer focused on building clean, user-friendly websites.</p>
-    <!-- From Uiverse.io by Javierrocadev --> 
-<div class="card">
-  <div class="image"></div>
-  <div class="card-info">
-    <span>Chamakope Jamal</span>
-    <p>Software developer</p>
-  </div>
-  <a href="#" class="button">Folow</a>
-</div>
+    <div class="box" style="display: flex; flex-direction: row; justify-content: center; column-gap: 2rem;">
+
+      <div class="card">
+        <div class="image"></div>
+        <div class="card-info">
+          <span>Chamakope Jamal</span>
+          <p>Software developer</p>
+        </div>
+        <a href="#" class="button">Follow</a>
+      </div>
+
+      <div class="card">
+        <div class="image"></div>
+        <div class="card-info">
+          <span>David Casto</span>
+          <p>Software developer</p>
+        </div>
+        <a href="#" class="button">Follow</a>
+      </div>
+
+      <div class="card">
+        <div class="image"></div>
+        <div class="card-info">
+          <span>Pelegrin Moses</span>
+          <p>Software developer</p>
+        </div>
+        <a href="#" class="button">Follow</a>
+      </div>
+
+    </div>
   </section>
 
+  <!-- Mini Contact Info -->
+  <div class="mini-contact">
+    📧 chamakope@winga.com | ☎️ +255 712 345 678
+  </div>
+
+  <!-- Developer Selection Modal -->
+  <div id="chooseDeveloperModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeChooseDeveloper">&times;</span>
+      <h2>Select a Developer to Contact</h2>
+      <button class="dev-btn" data-name="Chamakope Jamal">Chamakope Jamal</button>
+      <button class="dev-btn" data-name="David Casto">David Casto</button>
+      <button class="dev-btn" data-name="Pelegrin Moses">Pelegrin Moses</button>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Contact <span id="contactPerson">Me</span></h2>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button>Send</button>
+    </div>
+  </div>
+
   
+<!-- Updated Portfolio Link in Nav -->
+<a id="openGallery">Portfolio</a>
+
+<!-- Portfolio Gallery Modal (inserted near the bottom of the body) -->
+<div id="galleryModal" class="modal">
+  <div class="modal-content" style="max-width: 800px;">
+    <div class="modal-header">
+      <h2>My Projects</h2>
+      <span class="close" id="closeGallery" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
+    </div>
+    <div class="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+      <img src="97bb9cc17f7dc196a19a11c276b94dbb.jpg" alt="Project 1" style="width: 100%; border-radius: 10px;">
+      <img src="3490de29b92ad435bb584b4c98f46453.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
+      <img src="1014e8223da97d4904ba2b3c2658b711.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
+      <img src="874d9b91df5246ca2edb9ca2d3d8e612.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
+      <img src="419bed43440761d19be9e336dd6952d3.jpg" alt="Project 5" style="width: 100%; border-radius: 10px;">
+      <img src="298d645c08bc0657ec1236ef658539f1.jpg" alt="Project 6" style="width: 100%; border-radius: 10px;">
+
+      <img src="7f449a3cc5dc99137a56d3c1ffff4dcb.jpg" alt="Project 1" style="width: 100%; border-radius: 10px;">
+      <img src="7d075a55497133f483e7b3a9cadf3fb5.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
+      <img src="6e09c484a57bd623cbc802126aa10870.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
+      <img src="5abc238f11b4a8f0d90b8d8edd43254c.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
+      <img src="04f57999f52217ec5e11400a103c426a.jpg" alt="Project 5" style="width: 100%; border-radius: 10px;">
+      <img src="4db7174d1eb31c90e15ea34a9e32e7aa.jpg" alt="Project 6" style="width: 100%; border-radius: 10px;">
+
+      <img src="davy.png" alt="Project 1" style="width: 100%; border-radius: 10px;">
+      <img src="davydesigner.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
+      <img src="devtangazo.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
+      <img src="labour day.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
+      <img src="union daynew2.jpg" alt="Project 5" style="width: 100%; border-radius: 10px;">
+      <img src="coverdsgner.jpg" alt="Project 6" style="width: 100%; border-radius: 10px;">
+
+    </div>
+  </div>
+</div>
+
+  <!-- Scripts -->
+  <script>
+    // Gallery modal
+    const galleryBtn = document.getElementById("openGallery");
+    const galleryModal = document.getElementById("galleryModal");
+    const closeGallery = document.getElementById("closeGallery");
+
+    galleryBtn.onclick = () => galleryModal.style.display = "block";
+    closeGallery.onclick = () => galleryModal.style.display = "none";
+
+    // Developer contact logic
+    const openModal = document.getElementById("openContact");
+    const contactModal = document.getElementById("contactModal");
+    const closeModal = document.getElementById("closeModal");
+
+    const chooseDeveloperModal = document.getElementById("chooseDeveloperModal");
+    const closeChooseDeveloper = document.getElementById("closeChooseDeveloper");
+    const contactPersonSpan = document.getElementById("contactPerson");
+    const devButtons = document.querySelectorAll(".dev-btn");
+
+    openModal.addEventListener("click", () => {
+      chooseDeveloperModal.style.display = "block";
+    });
+
+    devButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const name = btn.getAttribute("data-name");
+        contactPersonSpan.textContent = name;
+        chooseDeveloperModal.style.display = "none";
+        contactModal.style.display = "block";
+      });
+    });
+
+    closeChooseDeveloper.addEventListener("click", () => {
+      chooseDeveloperModal.style.display = "none";
+    });
+
+    closeModal.addEventListener("click", () => {
+      contactModal.style.display = "none";
+    });
+
+    window.onclick = (e) => {
+      if (e.target === contactModal) contactModal.style.display = "none";
+      if (e.target === chooseDeveloperModal) chooseDeveloperModal.style.display = "none";
+      if (e.target === galleryModal) galleryModal.style.display = "none";
+    };
+  </script>
+
   <footer>
-    &copy; 2025 chamakope's Portfolio. All rights reserved.
+    &copy; 2025 Chamakope's Portfolio. All rights reserved.
   </footer>
 
 </body>
