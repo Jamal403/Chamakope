@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +54,7 @@
       border-radius: 10px;
       padding: 20px;
       display: inline-block;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       margin-top: 30px;
     }
 
@@ -87,7 +88,7 @@
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     .modal-content {
@@ -172,12 +173,13 @@
       background-color: white;
       padding: 10px 15px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       font-size: 0.9em;
       color: #333;
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -188,8 +190,8 @@
       <nav>
         <a href="#">Home</a>
         <a href="about.html">About Us</a>
-        <a id="openGallery">Portfolio</a>
-        <a id="openContact">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
         <a href="survey.html">Survey</a>
       </nav>
     </div>
@@ -197,7 +199,8 @@
 
   <section class="hero">
     <h1>Hey Collaborator!</h1>
-    <p>This project is used for learning purposes,aim to improve our skills for web development,Hope it will be good if every day we make more changes @Chamakope.</p>
+    <p>This project is used for learning purposes,aim to improve our skills for web development,Hope it will be good if
+      every day we make more changes @Chamakope.</p>
     <div class="box" style="display: flex; flex-direction: row; justify-content: center; column-gap: 2rem;">
 
       <div class="card">
@@ -259,54 +262,6 @@
     </div>
   </div>
 
-  <!-- Contact Modal -->
-  <div id="contactModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h2>Contact <span id="contactPerson">Me</span></h2>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="4" placeholder="Your Message"></textarea>
-      <button>Send</button>
-    </div>
-  </div>
-
-  
-<!-- Updated Portfolio Link in Nav -->
-<a id="openGallery">Portfolio</a>
-
-<!-- Portfolio Gallery Modal (inserted near the bottom of the body) -->
-<div id="galleryModal" class="modal">
-  <div class="modal-content" style="max-width: 800px;">
-    <div class="modal-header">
-      <h2>My Projects</h2>
-      <span class="close" id="closeGallery" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
-    </div>
-    <div class="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
-      <img src="97bb9cc17f7dc196a19a11c276b94dbb.jpg" alt="Project 1" style="width: 100%; border-radius: 10px;">
-      <img src="3490de29b92ad435bb584b4c98f46453.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
-      <img src="1014e8223da97d4904ba2b3c2658b711.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
-      <img src="874d9b91df5246ca2edb9ca2d3d8e612.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
-      <img src="419bed43440761d19be9e336dd6952d3.jpg" alt="Project 5" style="width: 100%; border-radius: 10px;">
-      <img src="298d645c08bc0657ec1236ef658539f1.jpg" alt="Project 6" style="width: 100%; border-radius: 10px;">
-
-      <img src="7f449a3cc5dc99137a56d3c1ffff4dcb.jpg" alt="Project 1" style="width: 100%; border-radius: 10px;">
-      <img src="7d075a55497133f483e7b3a9cadf3fb5.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
-      <img src="6e09c484a57bd623cbc802126aa10870.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
-      <img src="5abc238f11b4a8f0d90b8d8edd43254c.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
-      <img src="04f57999f52217ec5e11400a103c426a.jpg" alt="Project 5" style="width: 100%; border-radius: 10px;">
-      <img src="4db7174d1eb31c90e15ea34a9e32e7aa.jpg" alt="Project 6" style="width: 100%; border-radius: 10px;">
-
-      <img src="davy.png" alt="Project 1" style="width: 100%; border-radius: 10px;">
-      <img src="davydesigner.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
-      <img src="devtangazo.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
-      <img src="labour day.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
-      <img src="union daynew2.jpg" alt="Project 5" style="width: 100%; border-radius: 10px;">
-      <img src="coverdsgner.jpg" alt="Project 6" style="width: 100%; border-radius: 10px;">
-
-    </div>
-  </div>
-</div>
 
   <!-- Scripts -->
   <script>
@@ -361,4 +316,5 @@
   </footer>
 
 </body>
+
 </html>
