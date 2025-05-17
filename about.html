@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Chamakope Developers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: aquamarine;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    .navme nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navme nav a:hover {
+      color: aqua;
+    }
+    .about-hero {
+      background: linear-gradient(120deg, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 30px 20px;
+    }
+    .about-hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .about-hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 40px 0 60px 0;
+    }
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      padding: 25px 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .team-card:hover {
+      transform: translateY(-8px) scale(1.03);
+    }
+    .team-card .image {
+      width: 80px;
+      height: 80px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5em;
+      color: #4e54c8;
+    }
+    .team-card span {
+      font-weight: bold;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .team-card p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .team-card .role {
+      color: #4e54c8;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+    .about-footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    @media (max-width: 900px) {
+      .team-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Winga Ramsey</h1>
+    </div>
+    <div class="navme">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" style="color:aqua;">About Us</a>
+        <a id="openGallery" href="javascript:void(0);">Portfolio</a>
+        <a id="openContact" href="javascript:void(0);">Contact</a>
+        <a href="survey.html">Survey</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about-hero">
+    <h1>About Us</h1>
+    <p>
+      We are a passionate team of software developers dedicated to learning, collaboration, and building impactful web solutions. Our journey began with a shared vision to improve our skills and help others grow in the world of technology. Every day, we strive to innovate, support each other, and deliver quality projects that make a difference.
+    </p>
+  </section>
+
+  <section class="team-section">
+    <div class="team-card">
+      <div class="image">CJ</div>
+      <span>Chamakope Jamal</span>
+      <div class="role">Software Developer</div>
+      <p>Focused on full-stack development and always eager to learn new technologies. Believes in teamwork and continuous improvement.</p>
+    </div>
+    <div class="team-card">
+      <div class="image">DC</div>
+      <span>David Casto</span>
+      <div class="role">Software Developer</div>
+      <p>Passionate about clean code and creative problem solving. Loves collaborating on innovative projects and sharing knowledge.</p>
+    </div>
+    <div class="team-card">
+      <div class="image">PM</div>
+      <span>Pelegrin Moses</span>
+      <div class="role">Software Developer</div>
+      <p>Enjoys building user-friendly interfaces and robust backend systems. Dedicated to delivering quality and value in every project.</p>
+    </div>
+    <div class="team-card">
+      <div class="image">JD</div>
+      <span>Jack Didas</span>
+      <div class="role">Software Developer</div>
+      <p>Specializes in web design and development. Always ready to take on new challenges and help the team succeed.</p>
+    </div>
+  </section>
+
+  <footer class="about-footer">
+    &copy; 2025 Chamakope's Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>

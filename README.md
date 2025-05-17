@@ -17,3 +17,5 @@ This is an educational and portfolio website developed collaboratively. It inclu
 ## 📞 Contact
 
 For questions or contributions, feel free to open an issue or contact one of the developers via the modal on the website.
+## Added
+a new page of survey page and page of about us was addeds plus javascript to check the interactivity of survey page.
